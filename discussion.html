@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+</head>
+<body>
+  <a style="position: absolute;top: 0; left: 0;padding: 1vw; background-color: yellow; margin: 1vw; border: green 2px solid; text-decoration: none; color: green; font-weight:bold; font-size: 1em;" id="home_button" onmouseover='document.getElementById("home_button").style.boxShadow = "yellow 0 0 25px 5px";document.getElementById("home_button").style.transform = "scale(1.1)";'onmouseout='document.getElementById("home_button").style.boxShadow = "none";document.getElementById("home_button").style.transform = "none";' href="./index.html">Home</a>
+    <center>
+        <h1>
+            Discussion
+        </h1>
+        
+        </center>
+
+
+
+
+
+
+
+
+
+<center>
+  <div class="testing"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur temporibus quae vero incidunt in quas amet, consectetur perferendis ex dolorem ipsa sint animi ab eos, vel ea velit, suscipit laborum.</p></div>
+<div class="feedback_and_improvment"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur temporibus quae vero incidunt in quas amet, consectetur perferendis ex dolorem ipsa sint animi ab eos, vel ea velit, suscipit laborum.</p></div>
+<div class="future_plans"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur temporibus quae vero incidunt in quas amet, consectetur perferendis ex dolorem ipsa sint animi ab eos, vel ea velit, suscipit laborum.</p></div>
+<div class="business_plans"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur temporibus quae vero incidunt in quas amet, consectetur perferendis ex dolorem ipsa sint animi ab eos, vel ea velit, suscipit laborum.</p></div>
+<div class="wwwwh"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur temporibus quae vero incidunt in quas amet, consectetur perferendis ex dolorem ipsa sint animi ab eos, vel ea velit, suscipit laborum.</p></div>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="range" value="1" max="100" id="next_page">
+
+        <style>
+
+
+
+          .testing{
+            background-color: red;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            top: 20vh;
+            right: 20vw;
+
+          }
+          .feedback_and_improvment{
+            background-color: blue;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            top: 60vh;
+            left: 20vw;
+          }
+
+          .future_plans{
+            background-color: green;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            top: 100vh;
+            right: 20vw;
+
+          }
+          .business_plans{
+            background-color: yellow;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            top: 140vh;
+            left: 20vw;
+
+          }
+          .wwwwh{
+            background-color: purple;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            top: 180vh;
+            right: 20vw;
+
+          }
+
+body{
+    margin: 0;
+    background-color: lightgreen;
+}
+center{
+        display: flex;
+    justify-content: center;   }
+    h1{
+      padding: .5vw;
+        background-color: yellow;
+        border: green solid 2px;
+      position: absolute;
+color: green;
+      
+        
+    }
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+
+
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+    input {
+      margin: 0;
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 20vh; 
+    background:darkslategray;
+    outline: none; 
+    position:absolute;
+    left: 0;
+  bottom:-150vh;
+
+  overscroll-behavior-y: contain;
+  
+    
+      }
+  input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5vh; 
+    height: 20vh;
+    background:darkgray;
+    cursor: pointer; 
+    border-radius: 1em;
+ 
+  }
+  
+  input::-moz-range-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5vh; 
+    height: 20vh;
+    background:darkgray;
+    cursor: pointer; 
+    border-radius: 1em;
+  }
+  
+</style>    
+
+
+
+<script>
+
+    var bar = document.getElementById("next_page")
+      
+    
+    bar.oninput = function() {
+      var valwuw = bar.value;
+      if(valwuw == 100){
+        
+          
+        window.location.href = "./credit.html"
+    
+      }else if (valwuw == 0){
+        window.location.href = "./design.html"
+      }
+    
+    }
+    
+    
+     
+    bar.onwheel = function() {
+      var valwuw = bar.value;
+      if(valwuw == 100){
+        
+          
+        window.location.href = "./credit.html"
+    
+      }else if (valwuw == 0){
+        window.location.href = "./design.html"
+      }
+        bar.value = bar.value - -10
+     }
+     
+    
+        </script>
+
+
+
+
+</body>
+</html>
