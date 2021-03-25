@@ -62,7 +62,7 @@ roles
     </center>
     <div class="pipes">
 
-<div id="water"><input type="range"  value="1" max="100"  id="next_page"></div>
+<div id="water"><input type="range"  value="10" max="100"  id="next_page"></div>
 
 
 <style>
@@ -293,12 +293,12 @@ body{
     
     bar.oninput = function() {
       var valwuw = bar.value;
-      if(valwuw == 100){
+      if(valwuw > 90){
         
           
         window.location.href = "./background.html"
     
-      }else if (valwuw == 0){
+      }else if (valwuw < 10){
         window.location.href = "./description.html"
       }
     
@@ -308,12 +308,12 @@ body{
      
     bar.onwheel = function() {
       var valwuw = bar.value;
-      if(valwuw == 100){
+      if(valwuw > 90){
         
           
         window.location.href = "./background.html"
     
-      }else if (valwuw == 0){
+      }else if (valwuw < 10){
         window.location.href = "./description.html"
       }
         bar.value = bar.value - -10

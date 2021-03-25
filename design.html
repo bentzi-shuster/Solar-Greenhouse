@@ -68,7 +68,7 @@ Design
 <div class="water2"></div>
 
 
-<input type="range"  value="1" max="100"  id="next_page">
+<input type="range"  value="10" max="100"  id="next_page">
 <style>
 
   .content1{
@@ -272,12 +272,12 @@ input {
   
   bar.oninput = function() {
     var valwuw = bar.value;
-    if(valwuw == 100){
+    if(valwuw > 90){
       
         
       window.location.href = "./discussion.html"
   
-    }else if (valwuw == 0){
+    }else if (valwuw < 10){
       window.location.href = "./background.html"
     }
   
@@ -287,12 +287,12 @@ input {
    
   bar.onwheel = function() {
     var valwuw = bar.value;
-    if(valwuw == 100){
+    if(valwuw > 90){
       
         
       window.location.href = "./discussion.html"
   
-    }else if (valwuw == 0){
+    }else if (valwuw < 10){
       window.location.href = "./background.html"
     }
       bar.value = bar.value - -10

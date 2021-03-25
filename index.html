@@ -75,7 +75,7 @@
 
     <div class="dirt">
       <h5>&#10145;</h5>
-      <input type="range" value="1" max="100" id="next_page">
+      <input type="range" value="10" max="100" id="next_page">
     </div>
 
 
@@ -89,12 +89,12 @@
     var bar = document.querySelector('input[type="range"]');
     bar.oninput = function () {
       var valwuw = bar.value;
-      if (valwuw == 100) {
+      if (valwuw > 90) {
 
 
         window.location.href = "./description.html"
 
-      }else if (valwuw == 0){
+      }else if (valwuw < 10){
         window.location.href = "./credit.html"
       }
 
@@ -105,12 +105,12 @@
 
     bar.onwheel = function () {
       var valwuw = bar.value;
-      if (valwuw == 100) {
+      if (valwuw > 90) {
 
 
         window.location.href = "./description.html"
 
-      }else if (valwuw == 0){
+      }else if (valwuw < 10){
         window.location.href = "./credit.html"
       }
       bar.value = bar.value - -10
