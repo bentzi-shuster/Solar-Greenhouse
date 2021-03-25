@@ -1,0 +1,21 @@
+check that all pages : 
+have no scroll-bars 
+are responsive 
+are consistent with scroll bars and style 
+index and scroll bar order is consistent
+are not too busy 
+have consistant background theme!!!
+intuitive UI 
+
+
+
+add arrow to scroll bars 
+
+add text to pages 
+
+get better art assets 
+
+favivons !!!
+
+
+

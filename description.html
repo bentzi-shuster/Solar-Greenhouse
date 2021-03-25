@@ -17,11 +17,20 @@
     </h1>
     
     </center>
-        
-   
-    <center>
-    <p>This project is a fully automated solar powered greenhouse. This project will be able to make a self-sustainable farm that requires only planting and harvesting. This project will work by having the greenhouse automate the correct amounts of nutrients to feed. It will also measure and regulate other important factors, like temperature. We made the solar greenhouse based on a timer because hydrometer sensors tend to decay. Our goal with this project is to make a high quality solar powered greenhouse that needs minimal maintenance. The design all starts with a rain barrel collecting water. From there it's pumped out to the plants on a timer using a real time clock module. We also use a float switch to determine the water level in the barrel and trigger an alarm. All the wiring is in a water proof box to avoid short circuiting. The whole greenhouse is powered through a solar cell with a battery to store power. The solar greenhouse is meant for small hobbyists who can't afford the heavy machinery and staff that a farm has. It can be bought for a low price and will not result in an exorbitant power bill. The solar greenhouse will revolutionize the garden market and make gardening more accessible.</p>
-</center>  <center>
+    <div class="content">
+    <div class="links">
+    <a id="Video" href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">Video</a>
+
+    <a id="notebook" href="./notebook.html">Notebook</a>
+</div>
+    
+       <div id="thesis"> <h2>Thesis</h2>
+   <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum tempore quae maxime, quasi reprehenderit minima</h5>
+  </div>
+      <div class="abstract">   <h2>Abstract</h2> <p>This project is a fully automated solar powered greenhouse. This project will be able to make a self-sustainable farm that requires only planting and harvesting. This project will work by having the greenhouse automate the correct amounts of nutrients to feed. It will also measure and regulate other important factors, like temperature. We made the solar greenhouse based on a timer because hydrometer sensors tend to decay. Our goal with this project is to make a high quality solar powered greenhouse that needs minimal maintenance. The design all starts with a rain barrel collecting water. From there it's pumped out to the plants on a timer using a real time clock module. We also use a float switch to determine the water level in the barrel and trigger an alarm. All the wiring is in a water proof box to avoid short circuiting. The whole greenhouse is powered through a solar cell with a battery to store power. The solar greenhouse is meant for small hobbyists who can't afford the heavy machinery and staff that a farm has. It can be bought for a low price and will not result in an exorbitant power bill. The solar greenhouse will revolutionize the garden market and make gardening more accessible.</p></div>
+</div>
+
+  <center>
   <div class="pipe"> <img src="./pipe-svgrepo-com.svg" alt="pipe"></div>
  
 <div class="water"></div>
@@ -30,6 +39,75 @@
 
 <input type="range"  value="1" max="100"  id="next_page">
   <style>
+.content{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+ top: 20vh;
+ align-items: center;
+}
+    .links > a{
+      word-wrap: break-word;
+      background-color: green;
+ font-weight: bolder;
+  position: relative;
+  align-self: center;
+  
+  font-size: 1em;
+  margin: .125em auto;
+  text-align: center;
+  padding: 1em 1.5em ;
+  text-decoration: none;
+        color: yellow;
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
+    
+    }
+    .links > a:hover{
+background-color: rgb(1, 170, 1);
+transform: scale(1.1);
+
+    }
+  .links{
+    background-color: yellow;
+  border: green solid;
+    padding: 1em;
+    position: relative;
+  width: 50vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ color: green;
+  }
+    #thesis{
+      margin-top: 5vh;
+     width: 50vw;
+  background-color: yellow;
+  border: green solid;
+  color: green;
+  position: relative;
+
+padding: 1em;
+z-index: 2;
+      
+    }
+    .abstract{
+      margin-top: 5vh;
+width: 50vw;
+  background-color: yellow;
+  border: green solid;
+  color: green;
+  position: relative;
+overflow-y:auto;
+max-height: 50vh;
+padding: 1em;
+z-index: 2;
+}
     input {
     -webkit-appearance: none; 
     appearance: none;
@@ -39,7 +117,7 @@
     outline: none; 
     position:absolute;
     left: 0;
-  bottom:-50vh;
+  bottom:-100vh;
   overscroll-behavior-y: contain;
   margin: 0;
     
@@ -60,16 +138,7 @@
     cursor: pointer; 
    
   }
-p{
-  max-width: 50vw;
-  background-color: yellow;
-  border: green solid;
-  color: green;
-  position: relative;
-top: 10vh;
-padding: 1vw;
-z-index: 2;
-}
+
 h1{
         background-color: yellow;
         border: green solid 2px;
@@ -102,7 +171,7 @@ img{
   position: absolute;
   width: 25vw; 
   left: 0;
-  bottom: -5vh;
+  bottom: -65vh;
 }
 .wire{
   position: absolute;
@@ -110,16 +179,16 @@ img{
   background:yellow;
   height: 2vh;
   right: 0;
-  bottom: 15vh;
+  bottom: -56vh;
   z-index: -1;
   border: solid 3px;
 }
 .water{
   background:url("water\'.gif");
-  height: 40vh;
+  height: 50vh;
   width: 50vw;
   position: absolute;
-  bottom: 0;
+  bottom: -80vh;
 border:black solid 5px;
 
 filter: opacity(.75);
