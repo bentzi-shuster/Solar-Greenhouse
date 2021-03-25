@@ -17,5 +17,5 @@ get better art assets
 
 favivons !!!
 
-
+fix the need to move cursor on scroll bar (at bottom of page)
 
