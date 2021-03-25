@@ -18,10 +18,13 @@ roles
     
     <center>
     <h1>About Us</h1></center>
-    <center>
+    <center><div class="flowers">
+      <img src="./tulips-152832_960_720.webp" alt="tulips">
+<img src="./tulips-152832_960_720.webp" alt="tulips">
+</div>
+
+
 <div class="content">
-   
-  
     <a href="https://www.thecije.org/" class="company" id="cije">
    <img id="logo2" src="  https://www.thecije.org/pics/header_logo.png"  alt="">
    </a>
@@ -63,6 +66,25 @@ roles
 
 
 <style>
+
+  .flowers{
+    position:absolute;
+    bottom: 10vh;
+ display: flex;
+width: 50vw;
+    height:50vh;
+   
+  }
+  .flowers > img:nth-child(2) {
+right: 0;
+position:absolute;
+height:50vh;
+  }
+  .flowers > img:nth-child(1) {
+left: 0;
+position:absolute;
+height:50vh;
+  }
   li{
     font-size: 1.25em;
   }
@@ -235,7 +257,7 @@ body{
     outline: none; 
     position:absolute;
     left: 0;
-  bottom:-105vh;
+  bottom:-115vh;
 
   overscroll-behavior-y: contain;
   
