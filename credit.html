@@ -30,23 +30,30 @@
 
 
  
-<input type="range"  value="10" max="100"  id="next_page">
+<input type="range" value="10" max="100"  id="next_page">
     <style>
 .pics{
 justify-content: center;
 flex-direction: row;
 display: flex;
     position: relative;
+    top: 20vh;
 }
-.pic{position: absolute;
+img.pic{
+  position: absolute;
    padding: 1vw;
     width: 35vw ;
     top: 20vh;
     display: none;
     border-radius: 1vw;
-  
+  z-index: 1;
 }
 div.pic{
+  position: relative;
+   padding: 1vw;
+    width: 35vw ;
+    top: 20vh;
+    border-radius: 1vw;
     background-color:rgba(245, 222, 179, 0.65);
   aspect-ratio: 3/3.5;
     display: block;
@@ -108,10 +115,9 @@ body{
     height: 20vh; 
     background: rgb(126, 95, 66);
     outline: none; 
-    position:absolute;
-    left: 0;
-  bottom:-45vh;
-
+    position:relative;
+    left: 0; 
+   bottom: -50vh;
   overscroll-behavior-y: contain;
   
     
