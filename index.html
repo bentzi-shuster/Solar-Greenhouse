@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="./1550413.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Green House</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <img class="cloud" src="https://www.svgimages.com/svg-image/s7/cloud.svg" alt="cloud">
+  <img class="cloud" src="https://www.svgimages.com/svg-image/s7/cloud.svg" alt="cloud">
+  <div class="sun"></div>
+  <img id="rain1" class="rain" src="./1550413.png" height="50px" alt="rain">
+  <img id="rain2" class="rain" src="./1550413.png" height="50px" alt="rain">
+  <img id="rain3" class="rain" src="./1550413.png" height="50px" alt="rain">
+  <img id="rain4" class="rain" src="./1550413.png" height="50px" alt="rain">
+  <img id="rain5" class="rain" src="./1550413.png" height="50px" alt="rain">
+  <img id="rain6" class="rain" src="./1550413.png" height="50px" alt="rain">
+
+  <center>
+    <img id="logo" src="./Solar Green House LOGO.svg" alt="LOGO">
+    <!-- LOGO -->
+
+    <h1>Red Orange Yellow and Greenhouse</h1>
+  </center>
+
+  <!-- 3D MODELS!!! -->
+  <!-- DATA -->
+  <!-- NOTEBOOK -->
+
+
+  <center>
+    <div id="grid">
+
+      <img src="./carrot.svg" alt="carrot">
+      
+      <a id="description" href="./description.html">Description </a>
+
+      <a id="aboutus" href="./aboutus.html">About Us </a>
+
+ <a id="Background" href="./background.html">Background</a>
+
+  <a id="research" href="./research.html">Research</a> 
+  
+  <a id="design" href="./design.html">Design</a>
+
+      <a id="credit" href="./credit.html">Credit</a>
+
+          <a id="Video" href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">Video</a>
+
+          <a id="notebook" href="./notebook.html">Notebook</a>
+
+      <!--May make a web page for the vid if a wanna  --->
+
+      
+
+    
+
+
+    </div>
+  </center>
+
+
+
+  <center>
+
+
+
+
+
+    <div class="dirt">
+      <h5>&#10145;</h5>
+      <input type="range" value="1" max="100" id="next_page">
+    </div>
+
+
+
+    </div>
+  </center>
+
+  <script>
+
+
+    var bar = document.querySelector('input[type="range"]');
+    bar.oninput = function () {
+      var valwuw = bar.value;
+      if (valwuw == 100) {
+
+
+        window.location.href = "./description.html"
+
+      }else if (valwuw == 0){
+        window.location.href = "./credit.html"
+      }
+
+
+    }
+
+
+
+    bar.onwheel = function () {
+      var valwuw = bar.value;
+      if (valwuw == 100) {
+
+
+        window.location.href = "./description.html"
+
+      }else if (valwuw == 0){
+        window.location.href = "./credit.html"
+      }
+      bar.value = bar.value - -10
+    }
+
+
+
+
+  </script>
+
+
+  <script>
+
+    var rain = document.getElementsByClassName("rain");
+    for (var i = 0; i < 6; i++) {
+      rain[i].style.left = Math.floor(Math.random(1) * 100) + "vw";
+      rain[i].addEventListener('animationiteration', function(){
+        this.style.left = Math.floor(Math.random(1) * 100 ) + "vw";
+        
+      })
+    }
+
+
+  </script>
+
+</body>
+
+</html>

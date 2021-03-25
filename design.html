@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<body>
+  <a style="position: absolute;top: 0; left: 0;padding: 1vw; background-color: yellow; margin: 1vw; border: green 2px solid; text-decoration: none; color: green; font-weight:bold; font-size: 1em; z-index: 1;" id="home_button" onmouseover='document.getElementById("home_button").style.boxShadow = "yellow 0 0 25px 5px";document.getElementById("home_button").style.transform = "scale(1.1)";'onmouseout='document.getElementById("home_button").style.boxShadow = "none";document.getElementById("home_button").style.transform = "none";' href="./index.html">Home</a>
+    <center>
+<h1>
+
+Design
+
+</h1>
+
+</center>
+
+<!-- thaught proses , i/o diaghram , circutr, code , cad rendering? ,  / bill of materials , design goals  -->
+<div class="content1">
+
+<div class="goals"> <h2>Goals</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga recusandae, tempora facere obcaecati ipsam possimus quidem iure quisquam, </p>
+  </div>
+  <div class="thought"> <h2>Thought Process</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga recusandae, tempora facere obcaecati ipsam possimus quidem iure quisquam, laboriosam praesentium. Cumque perferendis placeat deserunt quae facilis repellendus labore tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis unde molestias dolores atque praesentium, dignissimos cupiditate possimus ab? Vero incidunt rerum, facilis labore voluptates ullam! Alias nulla architecto distinctio.</p>
+    </div>
+<div class="code"><h2>CODE</h2><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, distinctio. Non cum maxime consequuntur quas sint culpa, aut id iste amet facilis! Laudantium, ducimus quis quam labore cumque eaque impedit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, distinctio. Non cum maxime consequuntur quas sint culpa, aut id iste amet facilis! Laudantium, ducimus quis quam labore cumque eaque impedit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, distinctio. Non cum maxime consequuntur quas sint culpa, aut id iste amet facilis! Laudantium, ducimus quis quam labore cumque eaque impedit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, distinctio. Non cum maxime consequuntur quas sint culpa, aut id iste amet facilis! Laudantium, ducimus quis quam labore cumque eaque impedit!</code></div>
+
+</div>
+
+
+<div class="content2">
+  <div class="io">io
+    <img src="" alt="">
+  </div>
+<div class="circity">circ
+  <img src="" alt="">
+</div>
+  <div class="cad">cad
+    <img src="" alt="">
+  </div>
+  <div class="billofmats"><ul>
+    <h2>Materials</h2>
+    <li>Leans</li>
+    <li>Greens</li>
+    <li>Potatos</li>
+    <li>Tomatos</li>
+    <li>Pies</li>
+    <li>Fries</li>
+    <li>Cakes</li>
+    <li>Bakes</li>
+    <li>Meats</li>
+    <li>Beets</li>
+    <li>Fish</li>
+    <li>Kinish</li>
+  
+  </ul></div>
+</div>
+
+
+
+
+    <img src="./crude.svg" alt="rain barrel">
+    
+<div class="water1"></div>
+<div class="water2"></div>
+
+
+<input type="range"  value="1" max="100"  id="next_page">
+<style>
+
+  .content1{
+    background-color: red;
+    position: relative;
+    max-width: 80vw;
+    height: 50vh;
+left: 15vw;
+top: 25vh;
+display: flex;
+flex-direction: row;
+align-items:flex-start;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .code::-webkit-scrollbar {
+    display: none;
+  }
+  .goals::-webkit-scrollbar {
+    display: none;
+  }
+  .thought::-webkit-scrollbar {
+    display: none;
+  }
+  .content1::-webkit-scrollbar {
+    display: none;
+  }
+  .code{
+   
+max-width: 33%;
+overflow-y: auto;
+padding:0 1vw;
+max-height: 50vh;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.goals{
+  overflow-y: auto;
+ 
+max-width: 33%;
+padding:0 1vw;
+max-height: 50vh;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+.thought{
+  overflow-y: auto;
+ 
+  max-width: 33%;
+padding:0 1vw;
+max-height: 50vh;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+
+  .content2{
+    background-color: red;
+    position: relative;
+    max-width: 80vw;
+    height: 20em;
+left: 15vw;
+top: 33vh;
+
+  }
+.cad{
+  height: 50% ;
+width: 60%;
+background-color: white;
+position: absolute;
+left: 20%;
+top: 0;
+}
+.billofmats{
+  height:100% ;
+width: 20% ;
+background-color:yellow ;
+position: absolute;
+  right:0;
+}
+.io{
+  position: absolute;
+  height: 100%;
+width:20% ;
+background-color:purple ;
+}
+.circity{
+height: 50% ;
+width: 60%;
+background-color: green;
+position: absolute;
+left: 20%;
+bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    center{
+        display: flex;
+    justify-content: center;   }
+    h1{
+      padding: .5vw;
+        background-color: yellow;
+        border: green solid 2px;
+      position: absolute;
+color: green;
+      
+    }
+   
+body{
+  overscroll-behavior: none;
+  height: 100vh;
+    margin:0px;
+    background-color:lightgreen;
+}
+    img{
+      z-index: 1;
+      position: absolute;
+    top: 20vh;
+        width: 15vw;
+        height: 15vw;
+    }
+.water1{
+top: 25vh;
+    position: absolute;
+    width: 2vw;
+    height: 55vh;
+    margin: 0 0 0 7vw ;
+ background: url("water\'.gif");
+}
+
+.water2{
+    position: absolute;
+   top: 79vh;
+   width: 93vw;
+height: 3vh;
+margin-left:7vw ;
+background: url("water\'.gif");
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+input {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 20vh; 
+    background:lightseagreen;
+    outline: none; 
+    position:absolute;
+    left: 0;
+  bottom:-70vh;
+  overscroll-behavior-y: contain;
+  margin: 0;
+    
+      }
+  input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5vh; 
+    height: 20vh;
+    background:teal;
+    cursor: pointer; 
+  }
+  
+  input::-moz-range-thumb {
+    width: 5vh; 
+    height: 20vh;
+    background:teal;
+    cursor: pointer; 
+   
+  }
+</style>
+
+
+<script>
+
+  var bar = document.getElementById("next_page")
+    
+  
+  bar.oninput = function() {
+    var valwuw = bar.value;
+    if(valwuw == 100){
+      
+        
+      window.location.href = "./credit.html"
+  
+    }else if (valwuw == 0){
+      window.location.href = "./research.html"
+    }
+  
+  }
+  
+  
+   
+  bar.onwheel = function() {
+    var valwuw = bar.value;
+    if(valwuw == 100){
+      
+        
+      window.location.href = "./credit.html"
+  
+    }else if (valwuw == 0){
+      window.location.href = "./research.html"
+    }
+      bar.value = bar.value - -10
+   }
+   
+  
+      </script>
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>

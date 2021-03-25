@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description</title>
+  
+</head>
+<body>
+  <a style="position: absolute;top: 0; left: 0;padding: 1vw; background-color: yellow; margin: 1vw; border: green 2px solid; text-decoration: none; color: green; font-weight:bold; font-size: 1em;" id="home_button" onmouseover='document.getElementById("home_button").style.boxShadow = "yellow 0 0 25px 5px";document.getElementById("home_button").style.transform = "scale(1.1)";'onmouseout='document.getElementById("home_button").style.boxShadow = "none";document.getElementById("home_button").style.transform = "none";' href="./index.html">Home</a>
+  <center>
+    <h1>
+    
+  Description
+    
+    </h1>
+    
+    </center>
+        
+   
+    <center>
+    <p>This project is a fully automated solar powered greenhouse. This project will be able to make a self-sustainable farm that requires only planting and harvesting. This project will work by having the greenhouse automate the correct amounts of nutrients to feed. It will also measure and regulate other important factors, like temperature. We made the solar greenhouse based on a timer because hydrometer sensors tend to decay. Our goal with this project is to make a high quality solar powered greenhouse that needs minimal maintenance. The design all starts with a rain barrel collecting water. From there it's pumped out to the plants on a timer using a real time clock module. We also use a float switch to determine the water level in the barrel and trigger an alarm. All the wiring is in a water proof box to avoid short circuiting. The whole greenhouse is powered through a solar cell with a battery to store power. The solar greenhouse is meant for small hobbyists who can't afford the heavy machinery and staff that a farm has. It can be bought for a low price and will not result in an exorbitant power bill. The solar greenhouse will revolutionize the garden market and make gardening more accessible.</p>
+</center>  <center>
+  <div class="pipe"> <img src="./pipe-svgrepo-com.svg" alt="pipe"></div>
+ 
+<div class="water"></div>
+<div class="wire"></div>
+</center> 
+
+<input type="range"  value="1" max="100"  id="next_page">
+  <style>
+    input {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 20vh; 
+    background:lightseagreen;
+    outline: none; 
+    position:absolute;
+    left: 0;
+  bottom:-50vh;
+  overscroll-behavior-y: contain;
+  margin: 0;
+    
+      }
+  input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5vh; 
+    height: 20vh;
+    background:teal;
+    cursor: pointer; 
+  }
+  
+  input::-moz-range-thumb {
+    width: 5vh; 
+    height: 20vh;
+    background:teal;
+    cursor: pointer; 
+   
+  }
+p{
+  max-width: 50vw;
+  background-color: yellow;
+  border: green solid;
+  color: green;
+  position: relative;
+top: 10vh;
+padding: 1vw;
+z-index: 2;
+}
+h1{
+        background-color: yellow;
+        border: green solid 2px;
+      position: absolute;
+color: green;
+      padding: .5vw;
+        
+    }
+body{
+  margin: 0;
+  background-color: lightgreen;
+
+}
+center{
+  display: flex;
+  justify-content: center;
+}
+/* .pipe{
+  position: absolute;
+  width: 25vw;
+  background: url("water\'.gif");
+  height: 5vh;
+  left: 0;
+  bottom: 15vh;
+filter: opacity(.75);
+  border-bottom: rgba(240, 240, 220, .75) 5px solid;
+  border-top: rgba(240, 240, 220,.75) 5px solid;
+} */
+img{
+  position: absolute;
+  width: 25vw; 
+  left: 0;
+  bottom: -5vh;
+}
+.wire{
+  position: absolute;
+  width: 25vw;
+  background:yellow;
+  height: 2vh;
+  right: 0;
+  bottom: 15vh;
+  z-index: -1;
+  border: solid 3px;
+}
+.water{
+  background:url("water\'.gif");
+  height: 40vh;
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+border:black solid 5px;
+
+filter: opacity(.75);
+
+}
+
+  </style>
+  
+<script>
+
+  var bar = document.getElementById("next_page")
+    
+  
+  bar.oninput = function() {
+    var valwuw = bar.value;
+    if(valwuw == 100){
+      
+        
+      window.location.href = "./aboutus.html"
+  
+    }else if (valwuw == 0){
+      window.location.href = "./index.html"
+    }
+  
+  }
+  
+  
+   
+  bar.onwheel = function() {
+    var valwuw = bar.value;
+    if(valwuw == 100){
+      
+        
+      window.location.href = "./aboutus.html"
+  
+    }else if (valwuw == 0){
+      window.location.href = "./index.html"
+    }
+      bar.value = bar.value - -10
+   }
+   
+  
+      </script>
+</body>
+</html>

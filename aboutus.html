@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+<a style="position: absolute;top: 0; left: 0;padding: 1vw; background-color: yellow; margin: 1vw; border: green 2px solid; text-decoration: none; color: green; font-weight:bold; font-size: 1em;" id="home_button" onmouseover='document.getElementById("home_button").style.boxShadow = "yellow 0 0 25px 5px";document.getElementById("home_button").style.transform = "scale(1.1)";'onmouseout='document.getElementById("home_button").style.boxShadow = "none";document.getElementById("home_button").style.transform = "none";' href="./index.html">Home</a>
+
+    <!-- 
+names 
+school 
+roles
+     -->
+    
+    
+    <center>
+    <h1>About Us</h1></center>
+    <center>
+<div class="content">
+   
+  
+    <a href="https://www.thecije.org/" class="company" id="cije">
+   <img id="logo2" src="  https://www.thecije.org/pics/header_logo.png"  alt="">
+   </a>
+
+    <a href="https://jechs.org/" class="company" id="school">
+      <img id="logo" src="https://jechs.org/images/RTMA%20HS%20logo%20web.png"  alt="">
+      <h4>JEC High School</h4>
+    </a>
+
+    <h3 id="ethan" class="person">Ethan Denker <br> (Denkere33253@thejec.org)
+      <center> <img src="./default-avatar.png" height="50" alt=""></center>
+       <center>
+   <ul>
+       <li>Video</li>
+       <li>Art Assets</li>
+       <li>Market Research</li>
+       </ul></center>
+   </h3>
+
+    <h3 id="bentzi" class="person">Benjamin shuster <br> (shusterb33241@thejec.org)
+        <center><img src="./default-avatar.png" height="50" alt=""></center>
+        <center>
+    <ul>
+    <li>Planing</li>
+    <li>Web Design</li>
+    <li>Project Assembely</li>
+    
+    </ul></center>
+    </h3>
+  
+    
+  </div>
+    </center>
+    <div class="pipes">
+<img src="./pipes.svg" alt="pipes"></div>
+<div id="water"><input type="range"  value="1" max="100"  id="next_page"></div>
+
+
+<style>
+  .pipes > img{
+position: absolute;
+left: 0;
+bottom: -80vh;
+height: 100vh;
+z-index: -1;
+
+  }
+
+.person{
+  font-size: 1em;
+     position: relative;
+        text-align: center;
+  padding: 1vw;
+  margin: 2vw 2vh;
+}
+.company{
+  margin: 2vw 2vh;
+  position: relative;
+padding: 1vw;
+
+text-decoration: none;
+font-size: 1em;
+display: flex;
+flex-direction: column;
+width: 12em;
+  height: 12em;
+
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+  #water2{
+    left: 1vw;
+    z-index: -1;
+    top: 0;
+
+    background: url("water\'.gif");
+height: 200vh;
+width: 2vw;
+    position: absolute;
+  }
+#school{
+  
+    background-color: rgb(0, 0, 80);
+    color: rgb(245, 122, 7);
+    border: solid rgb(245, 122, 7) 2px;
+   left: -5;
+}
+
+#logo{
+
+    height: 12.5vh;
+    width:15vh ;
+
+}
+#cije{
+    background-color:#126ec3;
+   width: 12em;
+   height: 12em;
+    border: solid #fff  2px;
+    left: -5vw;
+}
+
+#logo2{
+  height: 10vh;
+
+
+}
+
+   
+body{
+    background-color: lightgreen;
+    margin: 0;
+}
+.content{
+width: 100vw;
+    position: relative;
+        
+        
+        top: 20vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      
+    }
+    #bentzi{
+
+        background-color: yellow;
+        border: 2px solid green;
+  
+     left: 15vw;
+    
+  
+    }
+    #ethan{
+      
+      left: 5vw;
+        border: 2px solid green;
+        background-color: yellow;
+       
+      
+      
+    }
+#bentzi:hover , #ethan:hover{
+ 
+  transform:scale(1.1);
+  box-shadow: yellow 0 0 25px 5px;
+}
+
+#cije:hover{
+
+  transform:scale(1.1);
+ box-shadow: #126ec3 0 0 25px 5px;
+
+}
+#school:hover{
+ 
+ transform:scale(1.1);
+ box-shadow: rgb(0, 0, 80) 0 0 25px 5px;
+}
+    center{
+        display: flex;
+    justify-content: center;   }
+    h1{
+      padding: .5vw;
+        background-color: yellow;
+        border: green solid 2px;
+      position: absolute;
+color: green;
+      
+        
+    }
+    ul ,h3{
+color: green;
+        list-style:none;
+        text-align: center;padding: 0;margin: 0;
+    }
+    body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+
+
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+    input {
+      margin: 0;
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 20vh; 
+    background: url("water\'.gif");
+    outline: none; 
+    position:absolute;
+    left: 0;
+  bottom:-100vh;
+
+  overscroll-behavior-y: contain;
+  
+    
+      }
+  input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5vh; 
+    height: 20vh;
+    background:turquoise;
+    cursor: pointer; 
+  }
+  
+  input::-moz-range-thumb {
+    width: 5vh; 
+    height: 20vh;
+    background:turquoise;
+    cursor: pointer; 
+   
+  }
+  
+</style>    
+
+
+<script>
+
+    var bar = document.getElementById("next_page")
+      
+    
+    bar.oninput = function() {
+      var valwuw = bar.value;
+      if(valwuw == 100){
+        
+          
+        window.location.href = "./background.html"
+    
+      }else if (valwuw == 0){
+        window.location.href = "./description.html"
+      }
+    
+    }
+    
+    
+     
+    bar.onwheel = function() {
+      var valwuw = bar.value;
+      if(valwuw == 100){
+        
+          
+        window.location.href = "./background.html"
+    
+      }else if (valwuw == 0){
+        window.location.href = "./description.html"
+      }
+        bar.value = bar.value - -10
+     }
+     
+    
+        </script>
+</body>
+</html>
