@@ -18,10 +18,7 @@ roles
     
     <center>
     <h1>About Us</h1></center>
-    <center><div class="flowers">
-      <img src="./tulips-152832_960_720.webp" alt="tulips">
-<img src="./tulips-152832_960_720.webp" alt="tulips">
-</div>
+    <center>
 
 
 <div class="content">
@@ -62,29 +59,12 @@ roles
     </center>
     <div class="pipes">
 
-<div id="water"><input type="range"  value="10" max="100"  id="next_page"></div>
+<input type="range"  value="10" max="100"  id="next_page">
 
 
 <style>
 
-  .flowers{
-    position:absolute;
-    bottom: 10vh;
- display: flex;
-width: 50vw;
-    height:50vh;
-   
-  }
-  .flowers > img:nth-child(2) {
-right: 0;
-position:absolute;
-height:50vh;
-  }
-  .flowers > img:nth-child(1) {
-left: 0;
-position:absolute;
-height:50vh;
-  }
+ 
   li{
     font-size: 1.25em;
   }
@@ -248,16 +228,16 @@ body{
     scrollbar-width: none;  /* Firefox */
   }
     input {
-      margin: 0;
+      margin-top: 20vh;
     -webkit-appearance: none; 
     appearance: none;
     width: 100%; 
     height: 20vh; 
     background:seagreen ;
     outline: none; 
-    position:absolute;
+    position:sticky;
     left: 0;
-  bottom:-115vh;
+  bottom: 0;
 
   overscroll-behavior-y: contain;
   
