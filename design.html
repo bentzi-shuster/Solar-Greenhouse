@@ -33,13 +33,13 @@ Design
 
 <div class="content2">
   <div class="io">io
-    <img src="" alt="">
+    <img src="https://screencastsonline.com/site/show/icons-new/180/SCOM0897-180.png" alt="">
   </div>
 <div class="circity">circ
-  <img src="" alt="">
+  <img src="https://www.visual-paradigm.com/servlet/editor-content/tutorials/how-to-create-circuit-diagram/sites/7/2019/02/circuit-diagram-example.png" alt="">
 </div>
   <div class="cad">cad
-    <img src="" alt="">
+    <img src="https://logodix.com/logo/1977379.jpg" alt="">
   </div>
   <div class="billofmats"><ul>
     <h2>Materials</h2>
@@ -62,21 +62,20 @@ Design
 
 
 
-    <img src="./crude.svg" alt="rain barrel">
-    
-<div class="water1"></div>
-<div class="water2"></div>
 
 
 <input type="range"  value="10" max="100"  id="next_page">
 <style>
-
+img{
+  max-height: 100%;
+max-width: 100%;
+}
   .content1{
     background-color: red;
     position: relative;
     max-width: 80vw;
     height: 50vh;
-left: 15vw;
+left: 10vw;
 top: 25vh;
 display: flex;
 flex-direction: row;
@@ -85,18 +84,8 @@ align-items:flex-start;
     scrollbar-width: none;  /* Firefox */
   }
 
-  .code::-webkit-scrollbar {
-    display: none;
-  }
-  .goals::-webkit-scrollbar {
-    display: none;
-  }
-  .thought::-webkit-scrollbar {
-    display: none;
-  }
-  .content1::-webkit-scrollbar {
-    display: none;
-  }
+  
+   
   .code{
    
 max-width: 33%;
@@ -128,44 +117,67 @@ max-height: 50vh;
 
 
 
+  
+ 
+  
+
+
+  
 
   .content2{
     background-color: red;
     position: relative;
     max-width: 80vw;
     height: 20em;
-left: 15vw;
+left: 10vw;
 top: 33vh;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-start;
 
   }
+  
 .cad{
-  height: 50% ;
-width: 60%;
+  -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  width: 16em;
+  overflow-y: auto;
+  height: 16em;
+    margin:.5em;
 background-color: white;
-position: absolute;
-left: 20%;
-top: 0;
+
+
 }
 .billofmats{
-  height:100% ;
-width: 20% ;
+  -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  width: 16em;
+  overflow-y: auto;
+  height: 16em;
+    margin:.5em;
 background-color:yellow ;
-position: absolute;
-  right:0;
+
 }
 .io{
-  position: absolute;
-  height: 100%;
-width:20% ;
+  -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  width: 16em;
+  overflow-y: auto;
+  height: 16em;
+    margin:.5em;
 background-color:purple ;
 }
 .circity{
-height: 50% ;
-width: 60%;
+  -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  width: 16em;
+  overflow-y: auto;
+  height: 16em;
+    margin:.5em;
 background-color: green;
-position: absolute;
-left: 20%;
-bottom: 0;
+
 }
 
 
@@ -198,40 +210,15 @@ body{
   height: 100vh;
     margin:0px;
     background-color:lightgreen;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
-    img{
-      z-index: 1;
-      position: absolute;
-    top: 20vh;
-        width: 15vw;
-        height: 15vw;
-    }
-.water1{
-top: 25vh;
-    position: absolute;
-    width: 2vw;
-    height: 55vh;
-    margin: 0 0 0 7vw ;
- background: url("water\'.gif");
-}
-
-.water2{
-    position: absolute;
-   top: 79vh;
-   width: 93vw;
-height: 3vh;
-margin-left:7vw ;
-background: url("water\'.gif");
-}
-body::-webkit-scrollbar {
+   
+.content2::-webkit-scrollbar, .billofmats::-webkit-scrollbar, .circity::-webkit-scrollbar,.cad::-webkit-scrollbar, .io::-webkit-scrollbar, body::-webkit-scrollbar,.code::-webkit-scrollbar, .goals::-webkit-scrollbar, .thought::-webkit-scrollbar, .content1::-webkit-scrollbar {
     display: none;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-body{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  
 input {
     -webkit-appearance: none; 
     appearance: none;

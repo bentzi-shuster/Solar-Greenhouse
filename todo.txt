@@ -9,7 +9,7 @@ intuitive UI
 
 
 
-add arrow to scroll bars 
+add svg arrow to scroll bars 
 
 add text to pages 
 
