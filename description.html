@@ -102,7 +102,7 @@ onmouseout='document.getElementById("home_button").style.transform = "none";'
         color: yellow;
         -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
         clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
-    
+        transition:transform .25s linear;
     }
     .links > a:hover{
 background-color: rgb(1, 170, 1);
@@ -196,6 +196,17 @@ center{
   display: flex;
   justify-content: center;
 }
+
+
+
+
+#thesis::-webkit-scrollbar,.abstract::-webkit-scrollbar,body::-webkit-scrollbar {
+    display: none;
+  }
+  #thesis,.abstract,body{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
   </style>
   
 <script>
