@@ -1,5 +1,6 @@
 
 body{
+    cursor: url('./cursor.svg'), auto;
     margin: 0;
     box-sizing: border-box;
 background-color:lightgreen;
