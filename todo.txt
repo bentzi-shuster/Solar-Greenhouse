@@ -19,4 +19,6 @@ favivons !!!
 
 fix the need to move cursor on scroll bar (at bottom of page)
 
-fix home button on phones and design button on mobile 
+fix home button on phones
+
+split css?
