@@ -144,43 +144,55 @@ li{
     word-wrap: break-word;
 }
 
-#grid > a:hover{
-    
-    box-shadow: #40a014 0 0 1em .25em ;
-    border:dashed .25vw green;
-
+@media only screen and (orientation:portrait){
+.four{
+    display: none;
 }
+.eight{
+    margin: 0 auto;
+    display: block;
+    height: calc(10em + 57.5vh);
+    bottom: -2vh;
+    position: relative;
+}
+#carrot{
+    height: 20vh;
+    top:-15vh;
+    right: 60vw;
+}
+}
+@media only screen and (orientation:landscape){
+    .four{
+        margin: 0 auto 0 auto;
+        display: block;
+        height: calc(5em + 37.5vh);
+        position: relative;
+        bottom: -1vh;
+        
+       
+    }
+    .eight{
+        display: none;
+    }
+    #carrot{
+        height: 70vh;
+        bottom: 5vh;
+        right: 50vw;
+    }
+    }
 #grid{
+    position: relative;
+    bottom: -20vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-}
- #grid >a {
-  transition:box-shadow .25s linear;
-  --widthA:calc(20vw + 20vh);
-    width: calc( var(--widthA) - 5% );
-    margin:1vw 5vw;
-    background-color: white;
-    color: green;
-    background-color: #ffff50;
-    text-decoration: none;
-    border: solid .25vw green;
-    font-weight: bold;
-    padding: 1vw;
-    font-size: 1.5em;
-    word-wrap: break-word;
-    text-align: center;
+    
 }
 #carrot {
 z-index: -1;
     position: absolute;
-    height: 75vh;
-  bottom: 0vh;
+   
    transform: rotateZ(15deg);
-   right: 40vw;
+
    -webkit-touch-callout: none; /* iOS Safari */
    -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -236,10 +248,6 @@ animation: pulse 2s ease infinite;
 100%{
     box-shadow: rgba(255, 255, 0, 0.5) 0 0 5em 1em;
 }
-}
-.dirt > img {
-    position: absolute;
-    top: -65vh;
 }
   .dirt{
     background:linear-gradient(rgb(189, 102, 51),rgb(128, 60, 21),rgba(71, 30, 2, 1));
