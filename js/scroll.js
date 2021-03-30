@@ -1,5 +1,6 @@
 
 var bar = document.getElementById("next_page");
+var loc = window.location.href;
 bar.oninput = function () {
   
     var valwuw = bar.value;
@@ -25,23 +26,22 @@ bar.addEventListener("wheel", function () {
 
 
 let next_Page = () => {
-    
-    if (window.location.pathname == "/credit.html"||window.location.pathname == "/Solar-Greenhouse/credit.html") return window.location.href = "./index.html";
-    if (window.location.pathname == "/background.html"||window.location.pathname == "/Solar-Greenhouse/background.html") return window.location.href = "./design.html";
-    if (window.location.pathname == "/aboutus.html"||window.location.pathname == "/Solar-Greenhouse/aboutus.html") return window.location.href = "./background.html";
-    if (window.location.pathname == "/design.html"||window.location.pathname == "/Solar-Greenhouse/design.html") return window.location.href = "./discussion.html";
-    if (window.location.pathname == "/description.html"||window.location.pathname == "/Solar-Greenhouse/description.html") return window.location.href = "./aboutus.html";
-    if (window.location.pathname == "/discussion.html"||window.location.pathname == "/Solar-Greenhouse/discussion.html") return window.location.href = "./credit.html";
-    if (window.location.pathname == "/index.html"||window.location.pathname == "/Solar-Greenhouse/index.html") return window.location.href = "./description.html";
-   
+    if (loc.includes("/credit.html") ) return window.location.href = "./index.html";
+    if (loc.includes("/background.html") ) return window.location.href = "./design.html";
+    if (loc.includes("/aboutus.html")  ) return window.location.href = "./background.html";
+    if (loc.includes("/design.html")  ) return window.location.href = "./discussion.html";
+    if (loc.includes("/description.html")  ) return window.location.href = "./aboutus.html";
+    if (loc.includes("/discussion.html")  ) return window.location.href = "./credit.html";
+    if (loc.includes("/index.html") ) return window.location.href = "./description.html";
+ 
 }
 let last_Page = () => {
+    if (loc.includes("/credit.html") ) return window.location.href = "./discussion.html";
+    if (loc.includes("/background.html") ) return window.location.href = "./background.html";
+    if (loc.includes("/aboutus.html")  ) return window.location.href = "./aboutus.html";
+    if (loc.includes("/design.html")  ) return window.location.href = "./description.html";
+    if (loc.includes("/description.html")  ) return window.location.href = "./index.html";
+    if (loc.includes("/discussion.html")  ) return window.location.href = "./design.html";
+    if (loc.includes("/index.html") ) return window.location.href = "./credit.html";
     //window.history.back()
-    if (window.location.pathname == "/credit.html"||window.location.pathname == "/Solar-Greenhouse/credit.html") return window.location.href = "./discussion.html";
-    if (window.location.pathname == "/background.html"||window.location.pathname == "/Solar-Greenhouse/background.html") return window.location.href = "./background.html";
-    if (window.location.pathname == "/aboutus.html"||window.location.pathname == "/Solar-Greenhouse/aboutus.html") return window.location.href = "./aboutus.html";
-    if (window.location.pathname == "/design.html"||window.location.pathname == "/Solar-Greenhouse/design.html") return window.location.href = "./description.html";
-    if (window.location.pathname == "/description.html"||window.location.pathname == "/Solar-Greenhouse/description.html") return window.location.href = "./index.html";
-    if (window.location.pathname == "/discussion.html"||window.location.pathname == "/Solar-Greenhouse/discussion.html") return window.location.href = "./design.html";
-    if (window.location.pathname == "/index.html"||window.location.pathname == "/Solar-Greenhouse/index.html") return window.location.href = "./credit.html";
 }
