@@ -2,82 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Description</title>
   
 </head>
-<body>
-  <a
-style=
-"
-border-radius: 50%;
-display: flex;
- justify-content: center;
- align-items: center;
- width: 5em;
- height: 5em;
- position:absolute;
-top: 0;
- left: 0;
-"  
- href="./index.html"
->
-  <img id="home_button"
-  onmouseover='document.getElementById("home_button").style.transform = "scale(1.1)";'
-onmouseout='document.getElementById("home_button").style.transform = "none";'
- style=
- "
- background-color:rgb(255, 220, 61);
-  border: green 3px solid;
-  border-radius: 50%;
-  position: absolute;
- top: 0;
-  left: 0;
- padding: 1vh;
-  margin: 1vh;
-  " 
-  height="100%"
-  width="100%"
-   src="./images/Animated Home Button.svg" 
-   alt="fancy solar dashboard flowr"
-   >
-</a>
-  <center>
+<body id="fade">
+ <home-button></home-button>
+
+  <div class="center">
     <h1>
     
   Description
     
     </h1>
+    </div>
     
-    </center>
     <div class="content">
     <div class="links">
     <a id="Video" href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">Video</a>
 
     <a id="notebook" href="./notebook.html">Notebook</a>
 </div>
-    
-       <div id="thesis"> <h2>Thesis</h2>
-   <p>The solar greenhouse is a minimal effort gardening tool. It is maintained by rainwater and sunlight.</p>
-  </div>
-      <div class="abstract">   <h2>Abstract</h2> <p>This project is a fully automated solar powered greenhouse. This project will be able to make a self-sustainable farm that requires only planting and harvesting. This project will work by having the greenhouse automate the correct amounts of nutrients to feed. It will also measure and regulate other important factors, like temperature. We made the solar greenhouse based on a timer because hydrometer sensors tend to decay. Our goal with this project is to make a high quality solar powered greenhouse that needs minimal maintenance. The design all starts with a rain barrel collecting water. From there it's pumped out to the plants on a timer using a real time clock module. We also use a float switch to determine the water level in the barrel and trigger an alarm. All the wiring is in a water proof box to avoid short circuiting. The whole greenhouse is powered through a solar cell with a battery to store power. The solar greenhouse is meant for small hobbyists who can't afford the heavy machinery and staff that a farm has. It can be bought for a low price and will not result in an exorbitant power bill. The solar greenhouse will revolutionize the garden market and make gardening more accessible.</p></div>
 
-
-  <center>
- 
-</center> 
-
-<input type="range"  value="10" max="100"  id="next_page"></div>
+<content-card lable="Thesis">The solar greenhouse is a minimal effort gardening tool. It is maintained by rainwater and sunlight.</content-card>
+     
+  
+<content-card lable="Abstract">This project is a fully automated solar powered greenhouse. This project will be able to make a self-sustainable farm that requires only planting and harvesting. This project will work by having the greenhouse automate the correct amounts of nutrients to feed. It will also measure and regulate other important factors, like temperature. We made the solar greenhouse based on a timer because hydrometer sensors tend to decay. Our goal with this project is to make a high quality solar powered greenhouse that needs minimal maintenance. The design all starts with a rain barrel collecting water. From there it's pumped out to the plants on a timer using a real time clock module. We also use a float switch to determine the water level in the barrel and trigger an alarm. All the wiring is in a water proof box to avoid short circuiting. The whole greenhouse is powered through a solar cell with a battery to store power. The solar greenhouse is meant for small hobbyists who can't afford the heavy machinery and staff that a farm has. It can be bought for a low price and will not result in an exorbitant power bill. The solar greenhouse will revolutionize the garden market and make gardening more accessible</content-card>
+   
+<content-card lable="Pitch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum tempora dolores perspiciatis dolor doloribus vitae nesciunt, fugit eius, totam, optio similique corrupti pariatur? Cum facere hic ipsam facilis deleniti saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium praesentium non illo ducimus consequatur deserunt, quae aperiam expedita? Eveniet commodi odit atque magnam? Incidunt odio perferendis fugit eligendi culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laboriosam, est officiis architecto ut amet itaque neque consectetur quos? Quidem asperiores ipsa commodi omnis similique praesentium explicabo beatae optio numquam?</content-card>
+<input type="range"  value="10" max="100"  id="next_page">
+</div>
   <style>
-    h2{
-      text-decoration: green underline ;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    p{
-      word-spacing: .25em;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+
+/* START OF PAGE ANIMATION CODE */
+#fade{
+      opacity: 0;
+    transition: opacity 1.5s;
+  }
+  body.loaded{
+    opacity: 1!important;
+  }
+  /* END oF PAGE ANIMATION CODE */
+
+    
+   
+   
 .content{
   display: flex;
   flex-direction:column;
@@ -123,126 +95,30 @@ transform: scale(1.1);
  flex-wrap: wrap;
  color: green;
   }
-    #thesis{
-      margin-top: 5vh;
-     width: 35vw;
-  background-color: yellow;
-  border: green solid;
-  color: green;
-  position: relative;
-
-padding: 1em;
-z-index: 2;
-      
-    }
-    .abstract{
-      margin-top: 5vh;
-width: 35vw;
-  background-color: yellow;
-  border: green solid;
-  color: green;
-  position: relative;
-overflow-y:auto;
-max-height: 50vh;
-padding: 1em;
-z-index: 2;
-}
+  
     input {
-      cursor: pointer;
-    -webkit-appearance: none; 
-    appearance: none;
-    width: 100%; 
-    height: 20vh; 
     background:lightseagreen;
-    outline: none; 
     position:absolute;
     left: 0;
   bottom:-30vh;
-  overscroll-behavior-y: contain;
-  margin: 0;
     
       }
   input::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 5vh; 
-    height: 20vh;
     background:teal;
-    cursor: e-resize;
   }
   
   input::-moz-range-thumb {
-    width: 5vh; 
-    height: 20vh;
     background:teal;
-    cursor: e-resize;
-   
-  }
-
-h1{
-        background-color: yellow;
-        border: green solid 2px;
-      position: absolute;
-color: green;
-      padding: .5vw;
-        margin-bottom: 1vh;
-    }
-body{
-  margin: 0;
-  background-color: lightgreen;
-
-}
-center{
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
-#thesis::-webkit-scrollbar,.abstract::-webkit-scrollbar,body::-webkit-scrollbar {
-    display: none;
-  }
-  #thesis,.abstract,body{
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
   }
   </style>
-  
-<script>
-
-  var bar = document.getElementById("next_page")
+  <script>
+    //PAGE ANIMATION CODE
+    window.onload = function(){
+      document.body.className += "loaded";
+    }
     
-  
-  bar.oninput = function() {
-    var valwuw = bar.value;
-    if(valwuw > 90){
-      
-        
-      window.location.href = "./aboutus.html"
-  
-    }else if (valwuw < 10){
-      window.location.href = "./index.html"
-    }
-  
-  }
-  
-  
-   
-  bar.onwheel = function() {
-    var valwuw = bar.value;
-    if(valwuw > 90){
-      
-        
-      window.location.href = "./aboutus.html"
-  
-    }else if (valwuw < 10){
-      window.location.href = "./index.html"
-    }
-      bar.value = bar.value - -10
-   }
-   
-  
-      </script>
+    </script>
+    <script src="./js/components.js"></script>
+  <script src="./js/scroll.js"></script>
 </body>
 </html>

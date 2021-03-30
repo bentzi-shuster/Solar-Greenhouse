@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="shortcut icon" href="./images/1550413.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-
+<body id="fade"> 
+<!-- FADE ID IS FOR PAGE ANIMATIONS -->
   <img class="cloud" src="https://www.svgimages.com/svg-image/s7/cloud.svg" alt="cloud">
   <img class="cloud" src="https://www.svgimages.com/svg-image/s7/cloud.svg" alt="cloud">
   <div class="sun"></div>
@@ -22,38 +22,40 @@
   <img id="rain5" class="rain" src="./images/1550413.png" height="50px" alt="rain">
   <img id="rain6" class="rain" src="./images/1550413.png" height="50px" alt="rain">
 
-  <center>
-    <img id="logo" src="./images/Solar Green House LOGO.svg" alt="LOGO">
+  <div id="col" class="center">
+    <h1 id="splash_text">Lean Green Growing Machine</h1>
+    <div class="Poly">
+    <img title="Hi, I'm Poly, its short for Polyethalyne. Wanna tip, scroll on the bar on the bottom of the page to go to the next page!" id="logo" src="./images/Solar Green House LOGO.svg" alt="LOGO"></div>
     <!-- LOGO -->
 
-    <h1>ALL NATURAL!</h1>
-  </center>
+    
+  </div>
 
   <!-- 3D MODELS!!! -->
   <!-- DATA -->
   <!-- NOTEBOOK -->
 
-
-  <center>
+<noscript><h3>ERROR, NO JS ALLOWED</h1></noscript>
+  <div class="center">
     <div id="grid">
 
       
       
-      <a id="description" href="./description.html">Description </a>
+      <a title="A Breif Description Of Our Project" id="description" href="./description.html">Description </a>
 
-      <a id="aboutus" href="./aboutus.html">About Us </a>
+      <a title="A Bit About Out Team" id="aboutus" href="./aboutus.html">About Us </a>
 
- <a id="Background" href="./background.html">Background</a>
+ <a title="The Reason The Solar Greenhouse Was Made" id="Background" href="./background.html">Background</a>
   
-  <a id="design" href="./design.html">Design</a>
+  <a title="How We Made The Solar Greenhouse" id="design" href="./design.html">Design</a>
 
-  <a id="discussion" href="./discussion.html">Discussion</a>
+  <a title="Post Prototype Research" id="discussion" href="./discussion.html">Discussion</a>
 
-      <a id="credit" href="./credit.html">Credit</a>
+      <a title="The People Who Helped Along The Way" id="credit" href="./credit.html">Credit</a>
 
-          <a id="Video" href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">Video</a>
+          <a title="A Word From Us" id="Video" href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">Video</a>
 
-          <a id="notebook" href="./notebook.html">Notebook</a>
+          <a title="Our Notes For The Project" id="notebook" href="./notebook.html">Notebook</a>
 
       <!--May make a web page for the vid if a wanna  --->
 
@@ -63,11 +65,11 @@
 
 
     </div>
-  </center>
+  </div>
 
 
 
-  <center>
+  <div class="center">
 
 
 
@@ -81,45 +83,9 @@
 
 
     </div>
-  </center>
+  </div>
 
-  <script>
-
-
-    var bar = document.querySelector('input[type="range"]');
-    bar.oninput = function () {
-      var valwuw = bar.value;
-      if (valwuw > 90) {
-
-
-        window.location.href = "./description.html"
-
-      }else if (valwuw < 10){
-        window.location.href = "./credit.html"
-      }
-
-
-    }
-
-
-
-    bar.onwheel = function () {
-      var valwuw = bar.value;
-      if (valwuw > 90) {
-
-
-        window.location.href = "./description.html"
-
-      }else if (valwuw < 10){
-        window.location.href = "./credit.html"
-      }
-      bar.value = bar.value - -10
-    }
-
-
-
-
-  </script>
+<script src="./js/scroll.js"></script>
 
 
   <script>
@@ -136,6 +102,42 @@
 
   </script>
 
+<script>
+
+var splash = document.getElementById("splash_text");
+const text =[
+  'Contains 0% Juice',
+  'All Natural',
+  'Chloroplast!',
+  'Set it and Forget it',
+  'Water you doin',
+  'See you on SUN-day',
+  'ITS GROWING!!!',
+  'Chlorophyll Thumb',
+  'Low Fat, High Carb',
+  'Lean Green Growing Machine',
+  'DIHYDROGEN-MONOXID',
+  'Dill with it',
+  "If It's Mint to be",
+  'Right on Thyme',
+  'Rooting For You'
+];
+var random_text = text[Math.floor(Math.random()* text.length)].toString();
+splash.innerHTML = random_text;
+</script>
+
+
+<script>
+//PAGE ANIMATION CODE
+window.onload = function(){
+  document.body.className += "loaded";
+}
+
+</script>
+
+<style>
+   
+</style>
 </body>
 
 </html>

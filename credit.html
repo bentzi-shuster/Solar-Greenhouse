@@ -2,57 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit</title>
 </head>
-<body>
-  <a
-  style=
-  "
-  border-radius: 50%;
-  display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 5em;
-   height: 5em;
-   position:absolute;
-  top: 0;
-   left: 0;
-  "  
-   href="./index.html"
-  >
-    <img id="home_button"
-    onmouseover='document.getElementById("home_button").style.transform = "scale(1.1)";'
-  onmouseout='document.getElementById("home_button").style.transform = "none";'
-   style=
-   "
-   background-color:rgb(255, 220, 61);
-    border: green 3px solid;
-    border-radius: 50%;
-    position: absolute;
-   top: 0;
-    left: 0;
-   padding: 1vh;
-    margin: 1vh;
-    " 
-    height="100%"
-    width="100%"
-     src="./images/Animated Home Button.svg" 
-     alt="fancy solar dashboard flowr"
-     >
-  </a>
-    <center>
+<body id="fade">
+  <home-button></home-button>
+    <div class="center">
         <h1>
     Credit
         </h1>
-        
-        </center>
-        <center> 
-        <a id="link1" href="https://create.arduino.cc/projecthub/maximilian-dullo/real-time-clock-controlled-herbal-garden-watering-system-d19e45">Garden Timer</a>
+        </div>
+       
+        <div class="center">
+          <div class="links">
+        <a id="link1" class="link" href="https://create.arduino.cc/projecthub/maximilian-dullo/real-time-clock-controlled-herbal-garden-watering-system-d19e45">Garden Timer</a>
    
-        <a id="link2" href="https://create.arduino.cc/projecthub/iasonas-christoulakis/how-to-power-your-arduino-using-solar-panel-4d29d8">Solar Power</a>  </center>
-
+        <a id="link2" class="link" href="https://create.arduino.cc/projecthub/iasonas-christoulakis/how-to-power-your-arduino-using-solar-panel-4d29d8">Solar Power</a>  
+      
+        <a id="link3" class="link" href="https://create.arduino.cc/projecthub/maximilian-dullo/real-time-clock-controlled-herbal-garden-watering-system-d19e45">TBD</a>
+   
+        <a id="link4" class="link" href="https://create.arduino.cc/projecthub/iasonas-christoulakis/how-to-power-your-arduino-using-solar-panel-4d29d8">TBD</a>  
+      
+        <a id="link5" class="link" href="https://create.arduino.cc/projecthub/maximilian-dullo/real-time-clock-controlled-herbal-garden-watering-system-d19e45">TBD</a>
+   
+        <a id="link6" class="link" href="https://create.arduino.cc/projecthub/iasonas-christoulakis/how-to-power-your-arduino-using-solar-panel-4d29d8">TBD</a>  
+      </div> 
+</div>
 <div class="pics">
 
 <img class="pic" id="pic1" src="./images/Credit1.png" alt="pic">
@@ -66,6 +44,26 @@
  
 <input type="range" value="10" max="100"  id="next_page">
     <style>
+.center{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* START OF PAGE ANIMATION CODE */
+#fade{
+
+ transform:translateY(100vh) rotateX(-90deg);
+ /* transform-origin: bottom center; */
+    transition: 1.5s;
+  }
+  body.loaded{
+    transform: translateY(0) rotateX(0deg) !important;
+  }
+  /* END oF PAGE ANIMATION CODE */
+
 .pics{
 justify-content: center;
 flex-direction: row;
@@ -76,16 +74,16 @@ display: flex;
 img.pic{
   position: absolute;
    padding: 1vw;
-    width: 35vw ;
+   height:20em;
     top: 20vh;
     display: none;
     border-radius: 1vw;
   z-index: 1;
 }
 div.pic{
-  position: relative;
+  position: absolute;
    padding: 1vw;
-    width: 35vw ;
+    height:20em;
     top: 20vh;
     border-radius: 1vw;
     background-color:rgba(245, 222, 179, 0.65);
@@ -93,130 +91,61 @@ div.pic{
     display: block;
     z-index: -1;
 }
-
-body{
-    margin: 0;
-    background-color: lightgreen;
-}
-h1{
-    padding: .5vw;
-        background-color: yellow;
-        border: green solid 2px;
-      position: absolute;
-color: green;
-      
-        
-    }
-center{
+@media only screen and (max-width:768px){
+  div.pic{display: none;}
+  input {bottom:-100vh !important; position:relative;}
+  .link {
+   
+    width: 50vw;
+  
+  }
+  .links{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
 }
-center > a{
+.links > a{
     position: relative;
     text-decoration: none;
     color: green;
     background-color: yellow;
     border: green solid 1px;
-    top: 20vh;
+    top:35vh;
     padding: 1vw;
     margin: 1vw;
 }
 a:hover{
 transform: scale(1.1);
-
-
-
 }
-body::-webkit-scrollbar {
-    display: none;
-  }
-  
-
-
-
-
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-body{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
     input {
-      cursor: pointer;
-      margin: 0;
-    -webkit-appearance: none; 
-    appearance: none;
-    width: 100%; 
-    height: 20vh; 
     background: rgb(126, 95, 66);
-    outline: none; 
-    position:relative;
+    position:absolute;
     left: 0; 
-   bottom: -50vh;
-  overscroll-behavior-y: contain;
+   bottom:calc(-75vh - 30em);
+
   
     
       }
   input::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 5vh; 
-    height: 20vh;
     background:brown;
-   cursor: e-resize;
-    border-radius: 1em;
 
   }
   
   input::-moz-range-thumb {
-    width: 5vh; 
-    height: 20vh;
     background:brown;
-   cursor: e-resize;
-    border-radius: 1em;
   }
   
 </style>    
 
-
+<script src="./js/scroll.js"></script>
 <script>
-
-    var bar = document.getElementById("next_page")
-      
-    
-    bar.oninput = function() {
-      var valwuw = bar.value;
-      if(valwuw > 90){
-        
-          
-        window.location.href = "./index.html"
-    
-      }else if (valwuw < 10){
-        window.location.href = "./discussion.html"
-      }
-    
-    }
-    
-    
-     
-    bar.onwheel = function() {
-      var valwuw = bar.value;
-      if(valwuw > 90){
-        
-          
-        window.location.href = "./index.html"
-    
-      }else if (valwuw < 10){
-        window.location.href = "./discussion.html"
-      }
-        bar.value = bar.value - -10
-     }
-     
-    
-        </script>
-
-
-
+  //PAGE ANIMATION CODE
+  window.onload = function(){
+    document.body.className += "loaded";
+  }
+  
+  </script>
 
 <script>
 var pic1 = document.getElementById("pic1"); 
@@ -238,5 +167,6 @@ link2.onmouseout = function(){
 
 
 </script>
+<script src="./js/components.js"></script>
 </body>
 </html>
