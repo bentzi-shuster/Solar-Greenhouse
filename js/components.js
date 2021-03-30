@@ -10,7 +10,9 @@ a{border-radius: 50%;
      height: 4em;
      position:absolute;
     top: 0;
-     left: 0;}
+     left: 0;
+    z-index:1;
+    }
 
 img{
     background-color:rgb(255, 220, 61);
@@ -22,7 +24,9 @@ img{
    padding: 1vh;
     margin: 1vh;
     transition: .125s linear;
+    z-index:1;
 }
+img:hover{transform:scale(1.1)}
 </style>
 
 

@@ -25,6 +25,7 @@ bar.addEventListener("wheel", function () {
 
 
 let next_Page = () => {
+    console.log(window.location.pathname);
     if (window.location.pathname == "/credit.html") return window.location.href = "./index.html";
     if (window.location.pathname == "/background.html") return window.location.href = "./design.html";
     if (window.location.pathname == "/aboutus.html") return window.location.href = "./background.html";
