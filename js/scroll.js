@@ -26,6 +26,7 @@ bar.addEventListener("wheel", function () {
 
 
 let next_Page = () => {
+    window.navigator.vibrate(200); 
     if (loc.includes("/index.html") ) return window.location.href = "./description.html";
     if (loc.includes("/description.html")  ) return window.location.href = "./aboutus.html";
     if (loc.includes("/aboutus.html")  ) return window.location.href = "./background.html";
@@ -36,6 +37,7 @@ let next_Page = () => {
  
 }
 let last_Page = () => {
+    window.navigator.vibrate(200); 
     if (loc.includes("/index.html") ) return window.location.href = "./credit.html";
     if (loc.includes("/description.html")  ) return window.location.href = "./index.html";
     if (loc.includes("/aboutus.html")  ) return window.location.href = "./description.html";

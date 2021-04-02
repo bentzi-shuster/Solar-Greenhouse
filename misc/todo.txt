@@ -13,10 +13,6 @@ add svg arrow to scroll bars
 
 add text to pages 
 
-get better art assets 
-
-favivons !!!
-
 fix the need to move cursor on scroll bar (at bottom of page)
 
 split css?
@@ -30,7 +26,4 @@ for images use :
     -khtml-user-select: none;
       -moz-user-select: none;
        -ms-user-select: none; 
-           user-select: none; 
-                               
-
-REMOVE CENTERS 
+           user-select: none;
