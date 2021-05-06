@@ -40,5 +40,5 @@
       </g>
     </g>
   </g>
-  <text transform="matrix(1, 0, 0, 1, 2.526461, 3.515077)" style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 1.5px; font-weight: 800; letter-spacing: .375px; text-transform: uppercase; white-space: pre;" id="text6629"><textPath xlink:href="#path-0" id="textPath4460">Solar Greenhouse</textPath></text>
+  <text transform="matrix(1, 0, 0, 1, 2.526461, 3.515077)" style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 1.75px; font-weight: 800; letter-spacing: .375px;text-align:center; text-transform: uppercase; white-space: pre;" id="text6629"><textPath xlink:href="#path-0" id="textPath4460">Solar Greenhouse</textPath></text>
 <animate attributeType="auto" attributeName="viewBox" anigen:lock="skip" id="camera1263" keyTimes="0;1" keySplines="0 0 1 1" values="188.131 198.86 27.303 32.159;188.131 198.86 27.303 32.159" dur="10s" repeatCount="indefinite" calcMode="spline" fill="freeze" additive="replace" accumulate="none" begin="0s"></animate></svg>
