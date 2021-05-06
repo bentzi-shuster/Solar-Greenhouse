@@ -26,20 +26,70 @@ Design
     <p>We knew we didn't want to use a hydration sensor because we want the product to last and the hydration sensors tend to wear away. That's why we went for a clock based farm. We also wanted to minimise the amount of input from the owner so we made the project solar powered. 
     </p>
     </div>
-<div class="code"><h2>CODE</h2><code>Lorem ipsum <br> dolor sit amet co<br>nsectetur adipisicin<br>g elit. Veniam, distinctio.<br> Non cum maxime consequuntur quas sint culpa, aut id iste amet facilis! Laudantium, ducimu<br>s qu<br>is quam <br>labore cumque eaque impedit!Lorem i<br>psum dolor sit a<br>met consect<br>etur adipisicing elit. V<br>eniam, distinctio. N<br>on cum maxime consequuntur quas sint culpa, aut id iste amet facil<br>is! L<br>audantium, du<br>cimus quis quam labore c<br>umque eaq<br>ue impedit!Lorem ip<br>sum dolor sit amet consectet<br>ur adi<br>pisici<br>ng elit. Veniam, distin<br>ctio. Non cum maxime con<br>sequuntur quas sint culp<br>a, aut id iste amet facilis! Laudantium<br>, ducimus quis quam labo<br><br>re cumque eaque impedit!Lore<br>m ips<br>um dolor <br>sit amet con<br>sectetur adipisi<br>cing elit. Veniam, distinctio. Non cum maxime co<br>nsequuntur quas sint culpa, aut id iste <br>amet facilis! Laudant<br>ium, ducimus qu<br>is quam la<br>bore cumque eaque impedit!</code></div>
+<div class="code"><h2>CODE</h2><code>
+  //             Herbal garden watering project                //<br>
+  /*  <br>
+   The following part of the code is from https://create.arduino.cc/projecthub/robotgeek-projects-team/<br>using-a-real-time-clock-with-arduino-6b3896 <br>
+   and from http://www.instructables.com/id/How-to-use-a-Buzzer-Arduino-Tutorial/<br>
+   */<br>
+  #include <Wire.h><br>
+  #include "DS1307.h"<br><br>
+  
+  DS1307 clock;//define a object of DS1307 class<br><br>
+  
+  const int RELAY = 4; //Relay set to digital pin 4<br>
+  const int buzzer = 9; //Buzzer set to digital pin 9<br><br>
+  
+  void setup()<br><br>
+  {<br>
+    pinMode(RELAY, OUTPUT);<br>
+    clock.begin();<br>
+    pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output<br>
+  }<br>
+  void loop()<br>
+  {<br>
+    timedRelay();<br>
+    tone(buzzer, 2000); // Send 2KHz sound signal...<br>
+    delay(500);        // ...for half sec<br>
+    noTone(buzzer);     // Stop sound...<br>
+    delay(500);        // ...for half sec<br>
+  }<br>
+  <br>
+  void timedRelay()<br>
+  {<br>
+    clock.getTime();<br>
+    <br>
+    switch (clock.hour)<br>
+    {<br>
+      case 6: //when the clock reads 6 AM seconds (Once every 24 hours)<br>
+        digitalWrite(RELAY, HIGH);   // turn the Relay on (HIGH is the voltage level)<br>
+        delay(20000);              // wait for 20 second<br>
+        digitalWrite(RELAY, LOW);    // turn the Relay off by making the voltage LOW<br>
+        delay(3600000);              // wait for 3600 second<br>
+    }<br>
+  
+     switch (clock.hour)<br>
+    {<br>
+      case 20: //when the clock reads 8 PM seconds (Once every 24 hours)<br>
+        digitalWrite(RELAY, HIGH);   // turn the Relay on (HIGH is the voltage level)<br>
+        delay(20000);              // wait for 20 second<br>
+        digitalWrite(RELAY, LOW);    // turn the Relay off by making the voltage LOW<br>
+        delay(3600000);              // wait for 3600 second<br>
+    }<br>
+  }</code></div>
 
 </div>
 
 
 <div class="content2">
-  <div class="io">io
-    <img src="https://screencastsonline.com/site/show/icons-new/180/SCOM0897-180.png" alt="">
+  <div class="io">
+    <img src="./images/io.jpg" alt="">
   </div>
-<div class="circity">circ
-  <img src="https://www.visual-paradigm.com/servlet/editor-content/tutorials/how-to-create-circuit-diagram/sites/7/2019/02/circuit-diagram-example.png" alt="">
+<div class="circity">
+  <img src="./images/diaghram.jpg" alt="wiring">
 </div>
-<div class="circity">tubing
-  <img src="https://www.visual-paradigm.com/servlet/editor-content/tutorials/how-to-create-circuit-diagram/sites/7/2019/02/circuit-diagram-example.png" alt="">
+<div class="circity">
+  <img src="./images/Untitled drawing (2).jpg" alt="tubing">
 </div>
   <div class="cad">cad1
     <img src="https://logodix.com/logo/1977379.jpg" alt="">
@@ -65,18 +115,22 @@ Design
 <div class="content5">
   <div class="billofmats"><ul>
     <h2>Materials</h2>
-    <li>Leans</li>
-    <li>Greens</li>
-    <li>Potatos</li>
-    <li>Tomatos</li>
-    <li>Pies</li>
-    <li>Fries</li>
-    <li>Cakes</li>
-    <li>Bakes</li>
-    <li>Meats</li>
-    <li>Beets</li>
-    <li>Fish</li>
-    <li>Kinish</li>
+    <li>12v Solar Panel</li>
+    <li>Smaller usb solar pannel</li>
+    <li>RTC</li>
+    <li>arduino nano</li>
+    <li>battery</li>
+    <li>wires</li>
+    <li>12v pump</li>
+    <li>waterproof box</li>
+    <li>rain barrel</li>
+    <li>relay</li>
+    <li>buzzer</li>
+    <li>resistor</li>
+    <li>fishtank air tubing</li>
+    <li>fishtank cleaning tubing</li>
+    <li>garden hose</li>
+    <li>ubs cable</li>
   
   </ul></div>
 
@@ -181,6 +235,7 @@ background-color: white;
   height: 16em;
     margin:.5em;
 background-color:purple ;
+display: flex;
 }
 .circity{
   -ms-overflow-style: none;  
@@ -190,6 +245,9 @@ background-color:purple ;
   height: 16em;
     margin:.5em;
 background-color: green;
+justify-content: center;
+display: flex;
+
 
 }
 
