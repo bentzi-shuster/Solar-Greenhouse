@@ -32,8 +32,8 @@ img:hover{transform:scale(1.1)}
 
 <a href="./index.html">
 <img id="home_button"
-onmouseover='document.getElementById("home_button").style.transform = "scale(1.1)";'
-onmouseout='document.getElementById("home_button").style.transform = "none";'
+onmouseover='this.shadowRoot.getElementById("home_button").style.transform = "scale(1.1)";'
+onmouseout='this.shadowRoot.getElementById("home_button").style.transform = "none";'
  height="100%"
 width="100%"
  src="./images/Animated Home Button.svg" 
@@ -48,7 +48,7 @@ template2.innerHTML=
 <style>
 p{
     word-spacing: .25em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; scrollbar-width: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; scrollbar-width: none;font-size: 1em;;
   }
 h2{scrollbar-width: none;
     z-index: 1;

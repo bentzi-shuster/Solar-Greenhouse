@@ -112,7 +112,8 @@ Design
   </div>
 
 <div class="content5">
-  <div class="billofmats"><ul>
+  <div class="billofmats">
+    <ul>
     <h2>Materials</h2>
     <li>12v Solar Panel - $31</li>
     <li>Smaller usb solar pannel - $13</li>
@@ -129,10 +130,14 @@ Design
     <li>Garden hose - $10</li>
     <li>float switch - $10</li>
     <li>Valve - $15</li>
-  <h2>Net cost - $358.32</h2>
+  </div>
+
+    <div class="netcost">
+  <h2>Net cost - $358.32</h2></div>
+  <div class="retail_cost">
   <h2>Retail cost: $250</h2>
-  <p>*The end product will be a much lower cost once production is streamlined</p>
-  </ul></div>
+  <p>*The end product will be a much lower cost once production is streamlined</p></div>
+  </ul>
 
 </div>
 
@@ -315,13 +320,14 @@ left: 10vw;
 top: 70vh;
 overflow-y: scroll;
 display: flex;
+justify-content: center;
 flex-direction: row;
-align-items:flex-start;
+
 -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
 
-.billofmats{
+.billofmats, .retail_cost,.netcost {
   color: green;
   -ms-overflow-style: none;  
     scrollbar-width: none; 
@@ -329,10 +335,10 @@ align-items:flex-start;
   overflow-y: scroll;
   height: 16em;
     margin:.5em;
+    display: block;
 background-color:yellow ;
 
 }
-
 
 
 
