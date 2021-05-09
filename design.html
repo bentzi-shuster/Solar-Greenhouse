@@ -105,7 +105,7 @@ Design
 </div>
 <div class="content4">
   <div class="possible_solutions"> <h2>Possible Solutions</h2>
-    <p>Our first thought was to make a typical garden. Then we realized that it may be a challenge to find a plug so a long cable was the obvious choice. After thinking it though we realized a cable may be clunky and a solar panel would be far more elegant. Then we were thinking about a moisture detection method for when to stop watering but due to the sensors not lasting long we choose a timer based design. We choose a timer over a set amount of water because that would be very complicated. We also wanted to make temperature control but we decided to scrap that idea as it overcomplicated the project and didn't add anything of essence. We decided to go for a solar powered watering system in the end because of its low cost and simplicity for the user. The solar greenhouse is better than its competitors due to its modular design, low cost, and the use of rainwater and sunlight reduces the need for intervention but when needed there is an alarm. Previous versions of the solar greenhouse had led to alert when the water was running low but we realized that over a range it is not useful to have a LED.
+    <p>Our first thought was to make a typical garden. Then we realized that it may be a challenge to find a plug so a long cable was the obvious choice. After thinking it though we realized a cable may be clunky and a solar panel would be a far more elegant solution. Then we considered a moisture-detection method for when to stop watering; however, due to the sensors not lasting long we choose a timer-based design. We choose a timer over a set amount of water because that would be very complicated. We also wanted to make temperature control but we decided that would'nt be feasable because is is overcomplicated and costly. We decided to go for a solar-powered watering system in the end because of its affordibility and simplicity. Our Solar Greenhouse is better than the competitors products due to its modular design, low cost, and the use of rainwater and sunlight to reduce the need for intervention but when needed, there is an alarm. Previous versions of the Solar Greenhouse had a light to alert when the water was running low. We realized that over a range it is not useful to have an light so we replaced it with a alarm.
 
     </p>
     </div>
@@ -136,7 +136,6 @@ Design
 
 </div>
 
-<input type="range"  value="10" max="100"  id="next_page">
 <style>
  
   /* START OF PAGE ANIMATION CODE */
@@ -159,7 +158,7 @@ max-width: 100%;
     max-width: 80vw;
     height: 50vh;
 left: 10vw;
-top: 25vh;
+top: 30vh;
 display: flex;
 flex-direction: row;
 align-items:flex-start;
@@ -205,13 +204,13 @@ max-height: 50vh;
     max-width: 80vw;
     height: 20em;
 left: 10vw;
-top: 35vh;
+top: 40vh;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-content: flex-start;
-overflow: auto;
+overflow: scroll;
 
   }
   
@@ -258,8 +257,9 @@ display: flex;
     position: relative;
     max-width: 80vw;
     height: 50vh;
+    overflow-y: scroll;
 left: 10vw;
-top: 45vh;
+top: 50vh;
 display: flex;
 flex-direction: row;
 align-items:flex-start;
@@ -283,7 +283,8 @@ max-height: 50vh;
     max-width: 80vw;
     height: 50vh;
 left: 10vw;
-top: 55vh;
+top: 60vh;
+overflow-y: scroll;
 display: flex;
 flex-direction: row;
 align-items:flex-start;
@@ -309,7 +310,8 @@ max-height: 50vh;
     max-width: 80vw;
     height: 50vh;
 left: 10vw;
-top: 65vh;
+top: 70vh;
+overflow-y: scroll;
 display: flex;
 flex-direction: row;
 align-items:flex-start;
@@ -322,7 +324,7 @@ align-items:flex-start;
   -ms-overflow-style: none;  
     scrollbar-width: none; 
   width: 16em;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 16em;
     margin:.5em;
 background-color:yellow ;
@@ -346,23 +348,7 @@ background-color:yellow ;
 
   
   
-input {
-    background:lightseagreen;
-    position:relative;
-    left: 0;
-  bottom:-80vh;
- 
-  
-    
-      }
-  input::-webkit-slider-thumb {
-    background:teal;
-  }
-  
-  input::-moz-range-thumb {
-    background:teal;
-   
-  }
+
   h2{
     text-decoration: green underline 3px;
   }
@@ -375,6 +361,6 @@ input {
   
   </script>
    <script src="./js/components.js"></script>
-<script src="./js/scroll.js"></script>
+
 </body>
 </html>

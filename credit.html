@@ -45,9 +45,9 @@
 <img width="20%" class="pic" id="pic3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/1200px-TheHomeDepot.svg.png" alt="pic">
 <img width="20%" class="pic" id="pic4" src="./images/HSlogo_round873.png" alt="pic">
 <img width="20%" class="pic" id="pic5" src="./images/HSlogo_round873.png" alt="pic">
-<img width="20%" class="pic" id="pic6" src="https://s3.amazonaws.com/newhobbyfarms.com/00GPSuRp-logo.png" alt="pic">
+<img width="20%" style="height:5em; width: 20em;" class="pic" id="pic6" src="https://s3.amazonaws.com/newhobbyfarms.com/00GPSuRp-logo.png" alt="pic">
 <img width="20%" class="pic" id="pic7" src="https://images-na.ssl-images-amazon.com/images/I/31%2BDgxPWXtL.jpg" alt="pic">
-<img width="20%" class="pic" id="pic8" src="https://base.imgix.net/files/base/ebm/ehstoday/image/2020/03/ehstoday_3468_epalogo.5e7e64160e169.png?auto=format&fit=max&w=1200" alt="pic">
+<img width="20%"  style="height:15em; width: 20em;" class="pic" id="pic8" src="https://base.imgix.net/files/base/ebm/ehstoday/image/2020/03/ehstoday_3468_epalogo.5e7e64160e169.png?auto=format&fit=max&w=1200" alt="pic">
 
 
 <div class="pic"></div>
@@ -57,8 +57,12 @@
 
 
  
-<input type="range" value="10" max="100"  id="next_page">
     <style>
+      .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 .center{
     position: relative;
 
@@ -133,27 +137,9 @@ div.pic{
 a:hover{
 transform: scale(1.1);
 }
-    input {
-    background: rgb(126, 95, 66);
-    position:absolute;
-    left: 0; 
-   bottom:calc(-75vh - 30em);
-
-  
-    
-      }
-  input::-webkit-slider-thumb {
-    background:brown;
-
-  }
-  
-  input::-moz-range-thumb {
-    background:brown;
-  }
-  
 </style>    
 
-<script src="./js/scroll.js"></script>
+
 <script>
   //PAGE ANIMATION CODE
   window.onload = function(){
