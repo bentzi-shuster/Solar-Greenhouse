@@ -176,6 +176,12 @@ li{
         
        
     }
+    #logo{
+height: 40vh;
+    }
+    .dirt{
+      position: relative;  top: -10vh;
+    }
     .eight{
         display: none;
     }
@@ -262,7 +268,7 @@ align-items:flex-end;
 width: 100%;
 height: 20vh;
 margin-top: 20vh;
-top:15vh;
+top:20vh;
  
    
 
