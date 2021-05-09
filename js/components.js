@@ -48,15 +48,15 @@ template2.innerHTML=
 <style>
 p{
     word-spacing: .25em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; scrollbar-width: none;
   }
-h2{
+h2{scrollbar-width: none;
     z-index: 1;
     background-color: yellow;
     border:green 3px solid;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-  legend{margin: 0; padding: 0;}
+  legend{ scrollbar-width: none;margin: 0; padding: 0;}
   fieldset::-webkit-scrollbar{
       display:none;
   }
@@ -67,12 +67,15 @@ fieldset{
       border: green solid;
       color: green;
       position: relative;
-    overflow-y:auto;
+    overflow-y:scroll;
+    scrollbar-width: none;
     padding: 1em;
     z-index: 2;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
+    
     }
+    *::-webkit-scrollbar{display:none}
+    *{-ms-overflow-style: none; 
+        scrollbar-width: none;  }
     p{max-height:25vh}
 } </style>
 <fieldset><legend><h2>
