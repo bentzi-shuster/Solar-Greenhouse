@@ -1,5 +1,9 @@
 #col{
     flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
 }
 .center{
     position: relative;
@@ -279,3 +283,8 @@ top:15vh;
 
   }
   
+.Poly{
+    position:relative;
+    width: fit-content;
+    display: flex;
+}
