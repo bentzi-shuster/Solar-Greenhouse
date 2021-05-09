@@ -110,6 +110,7 @@ z-index: .5;
     z-index: .5;
 }
 .rain{
+    z-index: -2;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
