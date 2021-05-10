@@ -32,12 +32,12 @@ img:hover{transform:scale(1.1)}
 
 <a href="./index.html">
 <img id="home_button"
-onmouseover='this.shadowRoot.getElementById("home_button").style.transform = "scale(1.1)";'
-onmouseout='this.shadowRoot.getElementById("home_button").style.transform = "none";'
+onmouseover='this.style.transform = "scale(1.1)";'
+onmouseout='this.style.transform = "none";'
  height="100%"
 width="100%"
  src="./images/Animated Home Button.svg" 
- alt="fancy solar dashboard flowr" >
+ alt="fancy solar dashboard flower" >
 </a>
 
 
