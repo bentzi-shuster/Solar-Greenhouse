@@ -31,3 +31,8 @@ color: green;
     justify-content: center;
     text-align: center;
 }
+home-button{
+  z-index: 5;
+  position: sticky;
+  top: 0;
+}
